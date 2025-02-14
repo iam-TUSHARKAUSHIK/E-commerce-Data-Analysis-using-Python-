@@ -50,29 +50,15 @@ This project focuses on solving the following key problems (See attached image f
 
 1️⃣ Monthly Sales Analysis
 
-import pandas as pd
-import plotly.express as px
-
-data['Order Date'] = pd.to_datetime(data['Order Date'])
-data['Month'] = data['Order Date'].dt.strftime('%Y-%m')
-
-monthly_sales = data.groupby('Month')['Sales'].sum().reset_index()
-
-fig = px.line(monthly_sales, x='Month', y='Sales', title='Monthly Sales Trend')
-fig.show()
+[![Image](https://github.com/user-attachments/assets/52842e89-070a-4d9a-91a4-2975332ef491)](url)
 
 2️⃣ Sales & Profit by Category
-
-category_sales = data.groupby('Category')[['Sales', 'Profit']].sum().reset_index()
-
-fig = px.bar(category_sales, x='Category', y=['Sales', 'Profit'], barmode='group', title='Sales & Profit by Category')
-fig.show()
+[![Image](https://github.com/user-attachments/assets/f656952d-aa4b-4fab-ade2-d643b3689bd7)](url)
+[![Image](https://github.com/user-attachments/assets/1e4b1065-cd5c-43da-9747-91aa4719d348)](url)
 
 3️⃣ Sales-to-Profit Ratio Calculation
 
-data['Sales_to_Profit_Ratio'] = data['Profit'] / data['Sales']
-ratio = data['Sales_to_Profit_Ratio'].mean()
-print(f'Overall Sales-to-Profit Ratio: {ratio:.2f}')
+[![Image](https://github.com/user-attachments/assets/9e94599e-1b62-44f4-8e0b-b05667efd7d6)](url)
 
 🔥 Key Insights
 
